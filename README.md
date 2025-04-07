@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website — built to showcase my background, skills, and projects as a student of Medical Informatics Technology.
 This is my personal portfolio website created for the SDET 101 course at NJIT. It showcases my background, skills, and projects using HTML, CSS, and JavaScript with responsive design.
 
-## 🔧 How to View Locally
+## How to View Locally
 
 1. Clone the repository:
    ```bash
@@ -13,13 +13,11 @@ This site will be deployed to both the NJIT server and AWS (S3 or Amplify).
 
 
 
-## 🌐 Live Versions
-- 🖥️ NJIT Server: 
-- ☁️ AWS S3 or Amplify: 
+## Live Versions
+- NJIT Server: 
+- AWS S3 or Amplify: 
 
--
-
-## 📁 Project Structure
+## Project Structure
 
 - `index.html` — Homepage
 - `about.html` — Background, education, and interests
@@ -31,7 +29,7 @@ This site will be deployed to both the NJIT server and AWS (S3 or Amplify).
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** — Semantic, accessible structure
 - **CSS3** — Responsive and modern styling with media queries
