@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Activity - Patient360</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Add New Activity</h2>
+    <form method="post">
+        <input type="text" name="activity" placeholder="Activity" required>
+        <button type="submit" class="btn">Add</button>
+    </form>
+    <a href="/dashboard" class="btn">Back to Dashboard</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard - HealthTrack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome, {{ session['user_name'] }}!</h2>
+    <a href="/add" class="btn">Add Activity</a>
+    <a href="/logout" class="btn">Logout</a>
+    <h3>Your Activities</h3>
+    <ul>
+        {% for activity, date in activities %}
+            <li>{{ date }} - {{ activity }}</li>
+        {% else %}
+            <li>No activities yet.</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Bar Chart -->
+    <h3>Your Activity Summary</h3>
+    <canvas id="activityChart" width="400" height="200"></canvas>
+
+    <script>
+        // Pass the activity summary from Python to JavaScript
+        const activityData = {{ activity_summary | tojson }};
+        const labels = Object.keys(activityData);  // Get activity names
+        const counts = Object.values(activityData);  // Get their corresponding counts
+
+        // Check if the values are properly assigned
+        console.log("Activity Data: ", activityData);
+        console.log("Labels: ", labels);
+        console.log("Counts: ", counts);
+
+        const ctx = document.getElementById('activityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels, // Activity names (X-axis)
+                datasets: [{
+                    label: 'Activity Frequency',
+                    data: counts,  // Frequency of each activity (Y-axis)
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)', // Blue color for bars
+                    borderColor: 'rgba(54, 162, 235, 1)',  // Border color
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true, // Start Y-axis from zero
+                        stepSize: 1  // Step size for the Y-axis
+                    }
+                }
+            }
+        });
+    </script>
+</div>
+</body>
+</html>
