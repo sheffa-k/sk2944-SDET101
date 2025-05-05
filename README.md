@@ -67,24 +67,3 @@ Welcome to my personal portfolio website, built to showcase my background, skill
 
 ---
 
-## Final Project: HealthTrack
-
-### **Overview**
-
-HealthTrack is a web application that allows users to track their physical activities and monitor their health progress. Users can register, log in, and log activities with dates and durations. The application also visualizes user data with a bar chart for better tracking of progress over time.
-
-### **Technologies Used**
-
-- **Flask** — Backend framework for handling user requests and data processing
-- **SQLite** — Database to store user data and activities
-- **HTML/CSS/JavaScript** — Frontend for creating a responsive and interactive UI
-- **Chart.js** — For visualizing activity data in a bar chart
-- **Password hashing and authentication**
-
-### **Features**
-
-- User registration and login system
-- Activity tracking with ability to log activities with dates and durations
-- Data visualization with a bar chart to track activity frequencies
-- Responsive and user-friendly design
-- Secure login with hashed passwords
