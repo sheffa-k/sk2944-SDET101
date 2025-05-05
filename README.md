@@ -1,101 +1,90 @@
 # Personal Portfolio Website & Final Project: HealthTrack
 
-Welcome to my personal portfolio website, built to showcase my background, skills, and projects as a student of Medical Informatics Technology. This portfolio also includes my final project, HealthTrack — a personal health activity tracker built as part of the SDET 101 course at NJIT. The website is built using HTML, CSS, and JavaScript with responsive design, and the final project leverages Flask, SQLite, and Chart.js.
+Welcome to my personal portfolio website, built to showcase my background, skills, and projects as a student of **Medical Informatics Technology**. This portfolio also includes my final project, **HealthTrack** — a personal health activity tracker built as part of the **SDET 101** course at **NJIT**. The website is built using **HTML**, **CSS**, and **JavaScript** with responsive design, and the final project leverages **Flask**, **SQLite**, and **Chart.js**.
 
+---
 
 ## Live Versions
-- NJIT Server: 
-- AWS S3 or Amplify: 
 
-## Personal Portfolio Website:
-index.html — Homepage
+- **NJIT Server**: (Link here)
+- **AWS S3 or Amplify**: (Link here)
 
-about.html — Background, education, and interests
+---
 
-projects.html — Highlighted projects with descriptions and visuals
+## Project Structure
 
-skills.html — Technical and soft skills
+### **Personal Portfolio Website**
 
-contact.html — Contact information and form
+- `index.html` — Homepage
+- `about.html` — Background, education, and interests
+- `projects.html` — Highlighted projects with descriptions and visuals
+- `skills.html` — Technical and soft skills
+- `contact.html` — Contact information and form
+- `css/styles.css` — Custom styling for all pages
+- `js/script.js` — JavaScript functionality (navigation, form validation, etc.)
 
-css/styles.css — Custom styling for all pages
+### **Final Project: HealthTrack**
 
-js/script.js — JavaScript functionality (navigation, form validation, etc.)
+- `app.py` — Flask application for handling routes, user authentication, and activity tracking
+- `instance/healthtrack.db` — SQLite database for storing user and activity data
+- `templates/` — HTML templates for different pages (login, dashboard, add activity, etc.)
+- `static/styles.css` — Custom styling specific to the final project
 
-Final Project: HealthTrack
-app.py — Flask application for handling routes, user authentication, and activity tracking
-
-instance/healthtrack.db — SQLite database for storing user and activity data
-
-templates/ — HTML templates for different pages (login, dashboard, add activity, etc.)
-
-static/styles.css — Custom styling specific to the final project
+---
 
 ## Technologies Used
 
-Technologies Used
-HTML5 — Semantic, accessible structure
+- **HTML5** — Semantic, accessible structure
+- **CSS3** — Responsive and modern styling with media queries
+- **JavaScript** — Interactive elements and DOM manipulation
+- **Git & GitHub** — Version control and collaboration
+- **AWS S3** — Cloud deployment for static website hosting
+- **NJIT Server** — Local server deployment via FTP
+- **Flask** — Web framework for building the HealthTrack project
+- **SQLite** — Database used for the HealthTrack project
+- **Chart.js** — For visualizing activity data in HealthTrack
 
-CSS3 — Responsive and modern styling with media queries
-
-JavaScript — Interactive elements and DOM manipulation
-
-Git & GitHub — Version control and collaboration
-
-AWS S3 — Cloud deployment for static website hosting
-
-NJIT Server — Local server deployment via FTP
-
-Flask — Web framework for building the HealthTrack project
-
-SQLite — Database used for the HealthTrack project
-
-Chart.js — For visualizing activity data in HealthTrack
 ---
 
 ## Features
 
-Features of the Portfolio Website
-Fully responsive design (desktop, tablet, mobile)
+### **Personal Portfolio Website Features**
 
-Interactive navigation menu and form validation
+- Fully responsive design (desktop, tablet, mobile)
+- Interactive navigation menu and form validation
+- Organized sections: About, Projects, Skills, and Contact
+- Clean, user-friendly UI with accessibility best practices
 
-Organized sections: About, Projects, Skills, and Contact
+### **HealthTrack Features**
 
-Clean, user-friendly UI with accessibility best practices
+- HealthTrack features a personalized dashboard for each user
+- HealthTrack tracks activities and provides data visualization via bar charts
+- User registration and login system
+- Activity tracking with ability to log activities with dates and durations
+- Data visualization with a bar chart to track activity frequencies
+- Responsive and user-friendly design
+- Secure login with hashed passwords
 
-HealthTrack features a personalized dashboard for each user
+---
 
-HealthTrack tracks activities and provides data visualization via bar charts
+## Final Project: HealthTrack
 
-Final Project: HealthTrack
-Overview:
+### **Overview**
+
 HealthTrack is a web application that allows users to track their physical activities and monitor their health progress. Users can register, log in, and log activities with dates and durations. The application also visualizes user data with a bar chart for better tracking of progress over time.
 
-Technologies Used:
+### **Technologies Used**
 
-Flask - Backend framework for handling user requests and data processing
+- **Flask** — Backend framework for handling user requests and data processing
+- **SQLite** — Database to store user data and activities
+- **HTML/CSS/JavaScript** — Frontend for creating a responsive and interactive UI
+- **Chart.js** — For visualizing activity data in a bar chart
+- **Password hashing and authentication**
 
-SQLite - Database to store user data and activities
+### **Features**
 
-HTML/CSS/JavaScript - Frontend for creating a responsive and interactive UI
-
-Chart.js - For visualizing activity data in a bar chart
-
-Password hashing and authentication
-
-Features:
-
-User registration and login system
-
-Activity tracking with ability to log activities with dates and durations
-
-Data visualization with a bar chart to track activity frequencies
-
-Responsive and user-friendly design
-
-Secure login with hashed passwords
-
-
-
-
+- User registration and login system
+- Activity tracking with ability to log activities with dates and durations
+- Data visualization with a bar chart to track activity frequencies
+- Responsive and user-friendly design
+- Secure login with hashed passwords
