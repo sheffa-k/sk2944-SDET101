@@ -6,8 +6,8 @@ Welcome to my personal portfolio website, built to showcase my background, skill
 
 ## Live Versions
 
-- **NJIT Server**: (Link here)
-- **AWS S3 or Amplify**: (Link here)
+- **NJIT Server**
+- **AWS S3 or Amplify**
 
 ---
 
